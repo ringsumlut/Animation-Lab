@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+}
+.title {
+    width: 250px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 30px;
+    position: relative;
+    -webkit-box-reflect: below -50px linear-gradient(transparent, rgba(0,0,0,0.4));
+ 
+}
+.title span {
+    position: relative;
+    display: inline-block;
+    color: #000;
+    font-size: 1.5em;
+    /* text-transform: uppercase; */
+    animation: animate 1s ease-in-out infinite;
+    animation-delay: calc(.1s * var(--i));
+}
+.mainBox {
+    width: 100%;
+    height: 200px;
+    background-color: #05225c;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    line-height: 200px;
+}
+
+.role1 {
+    display: flex;
+    padding: 40px;
+}
+.role2 {
+    display: flex;
+    padding: 40px;
+}
+.box1 {
+    background-color: #92278f;
+    /* border-radius: 10px; */
+    width: 400px;
+    height: 250px;
+    margin: 0 auto;
+  }
+.red:hover {
+    background-color: red;
+    animation:  forRed 1s ease-in-out infinite;
+  
+}
+.yellow:hover {
+    background-color: yellow;
+    animation:  forYellow 1s ease-in-out infinite;
+  
+}
+.green:hover {
+    background-color: green;
+    animation:  forGreen 1s ease-in-out infinite;
+  
+}
+.box2 {
+    background-color: #92278f;
+    /* border-radius: 10px; */
+    width: 400px;
+    height: 250px;
+    margin: 0 auto;
+  }
+  .boxC {
+    background-color: #92278f;
+    /* border-radius: 10px; */
+    width: 400px;
+    height: 250px;
+    margin: 0 auto;
+
+  }
+  .boxC p {
+    width: 400px;
+    height: 250px;
+      opacity: 0;
+      
+  }
+  p:hover {
+    opacity: 100;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    line-height: 150px;
+} 
+.a:hover {
+    background-color: red;
+    animation:  forA 1s ease-in-out;
+    animation-fill-mode: forwards; 
+}
+.b:hover {
+    background-color: yellow;
+    animation:  forB 1s ease-in-out;
+    animation-fill-mode: forwards; 
+  
+}
+
+  
+  /* animation for title */
+@keyframes animate {
+    0% {
+        transform: translateY(0px);
+    }
+    20% {
+        transform: translateY(-20px);
+    }
+    40%,100% {
+        transform: translateY(0px);
+    }
+ 
+  }
+
+  /* animation for red div */
+@keyframes forRed {
+      to {
+        transform: rotateY(180deg);
+      }
+  }
+  
+@keyframes forYellow {
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes forGreen {
+    to {
+        transform: rotateX(180deg);
+    }
+}
+
+@keyframes forA {
+    to {
+        border-radius: 50%;
+        overflow: hidden;
+        border-style:none;
+    }
+}
+@keyframes forB {
+    to {
+        width: 250px;
+        height: 250px;
+    }
+}
+/* @keyframes forC {
+    to {
+        transform: rotateX(180deg);
+    }
+} */
