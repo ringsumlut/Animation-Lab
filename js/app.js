@@ -37,8 +37,5 @@ $('.boxC').click(function () {
 
     document.body.appendChild(btn);
 
-
-
-
 });
 
